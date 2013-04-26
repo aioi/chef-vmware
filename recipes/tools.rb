@@ -18,7 +18,7 @@ if node.virtualization.system == 'vmware'
   apt_repository "vmware-tools" do
     uri "http://packages.vmware.com/tools/esx/#{node.vmware.esx.tools.version}/ubuntu"
     distribution node['lsb']['codename']
-    components ["main","restricted"]
+    components ["main"]
     action :add
     notifies :run, resources(:execute => "add_vmware_repo_key"), :immediately
   end
