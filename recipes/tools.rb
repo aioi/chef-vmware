@@ -11,7 +11,7 @@
 if node.virtualization.system == 'vmware'
 
   execute "add_vmware_repo_key" do
-    command "wget http://packages.vmware.com/tools/VMWARE-PACKAGING-GPG-KEY.pub -q -O- | apt-key add -"
+    command "wget http://packages.vmware.com/tools/keys/VMWARE-PACKAGING-GPG-RSA-KEY.pub -q -O- | apt-key add -"
     action :nothing
   end
 
