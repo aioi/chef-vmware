@@ -1,5 +1,11 @@
 # CHANGELOG:
 
+## 0.0.5
+
+- Add vmware key via the LWRP key parameter instead of a custom command
+- Add apt dependency to metadata.
+- Refactoring for Foodcritic rules
+
 ## 0.0.4
 
 - Fix link to vmware repository key
